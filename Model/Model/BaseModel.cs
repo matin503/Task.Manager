@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Model.Model;
 
-public class BaseModel
+public abstract class BaseModel
 {
     public Guid Id { get; set; }
     public DateTime UpdateAt { get; set; }
