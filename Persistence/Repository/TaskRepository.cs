@@ -8,7 +8,7 @@ using System.Text;
 
 namespace Persistence.Repository;
 
-internal class TaskRepository :Repository<TaskModel>, ITaskRepository
+public class TaskRepository :Repository<TaskModel>, ITaskRepository
 {
     private readonly DataProviderContext _context;
 

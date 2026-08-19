@@ -4,7 +4,7 @@ using Model.Model;
 
 namespace Application.Servises;
 
-class TaskService : ITaskService
+public class TaskService : ITaskService
 {
     private readonly IRepository<TaskModel> _taskRepository;
     public TaskService(ITaskRepository taskRepository)
