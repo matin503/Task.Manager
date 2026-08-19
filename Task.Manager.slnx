@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/1-UI/">
+    <Project Path="WebApi/WebApi.csproj" Id="1666a08f-f2de-46f4-8b07-85e7d80021e8" />
+  </Folder>
+  <Folder Name="/2-Business/">
+    <Project Path="Application/Application.csproj" Id="fd9e9a50-66f0-48ee-9ecc-51bd3eb7dd8c" />
+  </Folder>
+  <Folder Name="/3-Infrastructure/">
+    <Project Path="Model/Model.csproj" Id="77f10abd-7e9c-4e83-94b2-126d411defe3" />
+    <Project Path="Persistence/Persistence.csproj" Id="c745e627-01ce-4318-83e6-b277d7a6cb85" />
+  </Folder>
+</Solution>
