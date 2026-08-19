@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Persistence.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,8 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<DbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString(builder.Configuration.GetConnectionString("ConnectionString"))));
+builder.Services.AddDbContext<DataProviderContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 
