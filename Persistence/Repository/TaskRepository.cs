@@ -1,4 +1,5 @@
 ﻿using Model.Interfaces;
+using Model.Model;
 using Persistence.Context;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace Persistence.Repository;
 
-internal class TaskRepository :Repository<Task>, ITaskRepository
+internal class TaskRepository :Repository<TaskModel>, ITaskRepository
 {
     private readonly DataProviderContext _context;
 
